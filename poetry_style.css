@@ -1,0 +1,185 @@
+body{
+    color: #000; /* black */
+    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+}
+h1, h2, h3{
+    
+    font-family: 'Oswald', sans-serif;
+    /* Creating the font for the headings */
+}
+
+h1{
+    font-size: 200%;
+    /* Shows that this is the main header */
+    color:black;
+	padding-left: 150px;
+	margin:auto;
+}
+
+h3, h2{
+	color:dimgrey;
+	
+}
+
+h6{
+
+		font-size: 0.04%;
+}
+img.roundleft{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 0;
+    float: left;
+    
+    
+}
+.wrapper{
+    display:grid;
+	grid-template-columns: 1fr 400px;
+    grid-template-rows: auto; /* Will fit the entire width of the screen */
+    grid-template-areas:
+        "header header"
+        "nav nav"
+        "main aside"
+        "footer footer"; /* All of this is how the website will appear */ 
+	grid-gap: 0px;
+    
+}
+
+.box{
+    padding: 15px;
+    border-radius: 0px; /* No gaps between the five spaces however there is some padding from the sides */
+    
+    
+}
+
+header{
+	grid-area: header;
+	background-color: #7d839c; /* Blue ish Grey */
+	height: 150px;
+	
+}
+
+nav{
+	grid-area: nav;
+    background-color: #c3cedd; /* Baby Blue */
+	
+}
+
+main{
+	grid-area: main;
+    background-color: #e3e3e3; /* Light Grey */
+	height:100vh;
+}
+
+aside{
+	grid-area: aside;
+    background-color: #7da5d8; /* Blue */
+	height:100vh;
+	border-radius:5px !important;
+	
+}
+
+footer{
+	grid-area: footer;
+	background-color: #c3cedd; /* Baby Blue */
+	position: fixed;
+   	left: 0;
+   	bottom: 0;
+   	width: 100%;
+   	color: white;
+   	text-align: center;
+	padding:15px !important;
+	
+}
+
+
+/* Code for the form */
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #1b1361;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #2e2678;
+}
+
+/* Taken from W3 Schools */
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #adc4e1; /* This is the colour of the Nav-bar */
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white; /* This is the colour of the text on the buttons */
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #1b1361; /* This is the colour you see when you hover over the button */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black; /* This is the colour of the text in the dropdown */
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
